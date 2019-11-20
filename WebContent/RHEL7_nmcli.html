@@ -1,4 +1,34 @@
 <p>
 #nmcli general status [ To show overall status of network connectivity]
+<br>
+#nmcli general logging [ To show network manager logging info]
+<br>
+#nmcli dev status [ To display the Devices List]
+<br><br>
+
+** Device configuration files are stored in -><br> 
+/etc/sysconfig/network-scripts/<br><br>
+
+#ifconfig ens33 [ To show particular interface details]
+<br>
+#nmcli connection show [ To list out the connection]
+<br><br> ***Also we can use short form like below 
+<br>
+#nmcli con show -a [ To list out the active connection]
+<br>
+#nmcli con show 'connection_name' [ To show view specific connection]
+<br><br>
+
+[ To add a dynamic ethernet connection ]<br>
+#nmcli con add type ethernet con-name Mycon1 ifname ens33
+<br><br>
+
+[ To add a static ethernet connection]<br>
+#nmcli con add type ethernet con-name Mystatic ifname ens33 ip4 192.168.1.25/24 gw4 192.168.1.1
+<br>
+<br>
+#nmcli con down ens33 [ To down ethernet connection]
+<br>
+
 
 </p>
