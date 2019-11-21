@@ -12,7 +12,8 @@
 #ifconfig ens33 [ To show particular interface details]
 <br>
 #nmcli connection show [ To list out the connection]
-<br><br> ***Also we can use short form like below 
+<br><br>
+    ***Also we can use short form like below
 <br>
 #nmcli con show -a [ To list out the active connection]
 <br>
@@ -28,7 +29,23 @@
 <br>
 <br>
 
-
 #nmcli con down ens33 [ To down ethernet connection]
 <br>
+#nmcli con up ens33 [ To up ethernet connection]
+<br>
+<br>
+** If we don't want to connect the another interface automatically.<br>
+So, use device disconnect then connect another specified.<br>
+<br>
+#nmcli device disconnect ens33 [ To disconnect the current connected device]
+<br>
+#nmcli device connect Mycon1 [ To connect a specified network profile ]
+<br>
+#nmcli con modify Mystatic connection.autoconnect no [ To customize the connection options ]
+<br>
+#nmcli con mod Mystatic connection.permissions kuntal [ To permission for a particular user ]
+<br>
+
+
+
 </p>
