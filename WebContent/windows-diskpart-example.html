@@ -1,0 +1,39 @@
+<h3>Windows 'diskpart' example commands</h3>
+<h3></h3>
+
+
+<h4>Basic commands</h4>
+<p>
+list disk <br>
+select disk 0 <br>
+list partitions <br>
+select partitions <br>
+detail disk <br>
+detail partition <br>
+detail volume <br>
+help
+</p>
+<p>...</p>
+
+<h4>Create a new partition and format a partition</h4>
+<p>
+select disk 0 <br>
+create partition primary <br>
+assign letter=E <br>
+select partition 1 <br>
+format FS=NTFS LABEL="New Disk" Quick <br>
+exit
+
+</p>
+<p>...</p>
+
+<h4>Commands to convert disks </h4>
+<p>
+	convert mbr <br>
+	convert gpt <br>
+	convert dynamic <br>
+	convert basic <br>
+	clean all [ Remove all partitions and volumes info from the hard drive ]
+
+</p>
+<p>...</p>

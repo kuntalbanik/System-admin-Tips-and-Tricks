@@ -1,0 +1,19 @@
+<h3>Windows 10 Wifi connecting issue</h3>
+<p></p>
+<p>Open command prompt with administrator privileges and run the following commands</p>
+<p>|</p>
+
+<p>netsh winsock reset catalog</p>
+<p>netsh int ipv4 reset reset.log</p>
+<p>netsh int ipv6 reset reset.log</p>
+<p>** Now disable the wifi adapter and restart the system, then connect to wifi.</p>
+<p>** Run 'ncpa.cpl' -> right click wifi adapter -> properties -> configure -> Power Management -> uncheck the box of "Allow the computer to turn off this device to save power.</p>
+<p>...</p>
+
+<h3>If same problem occurred : use the following commands</h3>
+<p>|</p>
+
+<p>netsh int tcp set heuristics disabled</p>
+<p>netsh int tcp set global autotuninglevel=disabled</p>
+<p>netsh int tcp set global rss=enabled</p>
+<p>...</p>

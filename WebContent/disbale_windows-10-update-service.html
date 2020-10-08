@@ -1,0 +1,11 @@
+<h3>Disable windows 10 update service</h3>
+<p></p>
+<p>** Open services -> Disable windows update service  &nbsp; & &nbsp; Windows Licence Manager Service.</p>
+<br>
+<p>** Open regedit -> HKEY_LOCAL_MACHINE -> SYSTEM -> CurrentControlSet -> Services [ Delete the following entries ]</p>
+<p>
+	- Update Orchestor Service [ usosvc ] <br>
+	- Windows Update [ wuaserv ] <br>
+	- Windows Update Medic Service [ waasmedicsvc ]
+</p>
+<p>...</p>

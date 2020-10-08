@@ -1,0 +1,21 @@
+<h3>User Control In Windows Using CMD</h3>
+<p>net user   :   [ To check users available in system ]</p>
+<p>net user 'username'   :   [ Check user details of that user ]</p>
+<p>net localgroup   :   [ To check groups available in system ]</p>
+<p>net user 'username' *   :   [ To change a particular user's password ]</p>
+
+<p>...</p>
+<hr>
+
+<h3>Create an administrator account or Join/remove to an Administrator account</h3>
+
+<p>net user /add 'username' 'password'   :   [ Create an user with username and password ]</p>
+<p>net user 'username' /delete   :   [ To delete a particular user. Note. User's directory still present in system ]</p>
+<p>net localgroup administrators 'username' /add   :   [ To add an user into administrators group ]</p>
+<p>net localgroup administrators 'username' /delete   :   [ To remove an user from administrators group ]</p>
+<p>net user administrator /active:yes   :   [ To activate administrator user in system ]</p>
+<p>...</p>
+
+<hr>
+
+<h3></h3>
