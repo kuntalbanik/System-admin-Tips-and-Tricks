@@ -1,0 +1,19 @@
+
+1) Open Powershell in administrator mode
+
+to disable windows defender
+-------------------------------------
+Set-MpPreference -DisableRealtimeMonitoring $true
+
+to exceeding directory
+-------------------------------------
+Add-MpPreference -ExclusionPath C:\Users\userxyz\Desktop\new
+
+
+
+
+---------
+Must allow in system
+--------
+C:\Windows\SECOH-QAD.dll
+C:\Windows\SECOH-QAD.exe
