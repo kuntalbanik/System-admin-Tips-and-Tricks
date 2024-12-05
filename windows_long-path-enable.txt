@@ -1,0 +1,14 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\FileSystem]
+"LongPathsEnabled"=dword:00000001
+
+--------------------------------------
+On performing the following procedure, power shell will work for the Long Path feature:
+
+Click Window key and type gpedit.msc, then press the Enter key. This launches the Local Group Policy Editor.
+
+Navigate to Local Computer Policy > Computer Configuration > Administrative Templates > System > Filesystem.
+
+Double click Enable NTFS long paths.
+Select Enabled, then click OK.

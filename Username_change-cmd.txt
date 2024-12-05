@@ -1,0 +1,19 @@
+(1) Open a command-line window with Administrative privileges and type the following command:
+
+wmic
+
+(2) To list all user accounts, type:
+
+useraccount get name
+
+(3) To rename a specific account, type:
+
+useraccount where name='<old-username>' rename '<new-username>'
+
+(4) To confirm the operation, type:
+
+y
+
+(5) To view changes to the list, retype:
+
+useraccount get name

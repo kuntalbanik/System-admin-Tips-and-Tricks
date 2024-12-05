@@ -1,0 +1,3 @@
+Open advanced sound settings using command line or shortcut
+
+control mmsys.cpl sounds
