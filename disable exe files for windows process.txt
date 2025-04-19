@@ -1,0 +1,3 @@
+C:\Windows\UUS\amd64\MoUsoCoreWorker.exe
+
+%SystemRoot%\System32\slui.exe
