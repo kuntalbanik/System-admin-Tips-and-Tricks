@@ -1,3 +1,5 @@
 C:\Windows\UUS\amd64\MoUsoCoreWorker.exe
 
 %SystemRoot%\System32\slui.exe
+
+C:\Windows\System32\AggregatorHost.exe
